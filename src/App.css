@@ -1,0 +1,21 @@
+.App {
+  text-align: center;
+}
+::-webkit-scrollbar {
+  background-color: #ff24c8; 
+}
+::-webkit-scrollbar-track {
+  background-color: #2c0249;
+  background-image: url(../public/images/night-bg.png);
+}
+.App::-webkit-scrollbar-thumb {
+  background-color: pink;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: url(../public/images/bar1.gif);
+  transition: 1s;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #6f03a4;
+  border-radius: 13px;
+}

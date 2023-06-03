@@ -1,0 +1,424 @@
+
+.intro-container{
+    position: relative;
+    height: 100vh;    
+    background-image: url(../../../public/images/purplenight.png);    
+    overflow: hidden;
+}
+.section-intro{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    animation: stars 5s linear infinite;
+}
+@keyframes stars{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+}
+.section-intro span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 4px;
+    height: 4px;
+    background: #fdfcfd6a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 8px rgba(255, 255, 255, 0.1),
+    0 0 20px rgb(255, 251, 255);
+    animation: stars2 3s linear infinite;
+}
+@keyframes stars2{
+    0%{
+        transform: rotate(315deg) translateX(0);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: rotate(315deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+.section-intro span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+.section-intro span:nth-child(1){
+    top: 0;
+    right: 0;
+    left: initial;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+.section-intro span:nth-child(2){
+    top: 0;
+    right: 80px;
+    left: initial;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.section-intro span:nth-child(3){
+    top: 80px;
+    right: 0px;
+    left: initial;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.section-intro span:nth-child(4){
+    top: 0;
+    right: 180px;
+    left: initial;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.section-intro span:nth-child(5){
+    top: 0;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.section-intro span:nth-child(6){
+    top: 0;
+    right: 600px;
+    left: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.section-intro span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    left: initial;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.section-intro span:nth-child(8){
+    top: 0;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.section-intro span:nth-child(9){
+    top: 0;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.section-intro span:nth-child(10){
+    top: 0;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+.stars-section i{
+    position: absolute;
+    top: 30%;
+    width: 4px;
+    height: 4px;
+    background: #ffffffea;
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
+    0 0 0 2px rgba(255, 255, 255, 0.321),
+    0 0 6px rgba(255, 251, 255, 0.265);
+    animation: stars3 2s linear infinite;
+}
+.stars-section i::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 1px;
+    background: linear-gradient(90deg, #fff, transparent);
+}
+@keyframes stars3{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
+
+.stars-section i:nth-child(1){
+    top: 300px;
+    right: 0;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+.stars-section i:nth-child(2){
+    top: 330px;
+    right: 180px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.stars-section i:nth-child(3){
+    top: 800px;
+    right: 0px;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.stars-section i:nth-child(4){
+    top: 80px;
+    right: 180px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.stars-section i:nth-child(5){
+    top: 60px;
+    right: 400px;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.stars-section i:nth-child(6){
+    top: 160px;
+    right: 600px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.stars-section i:nth-child(7){
+    top: 300px;
+    right: 0px;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.stars-section i:nth-child(8){
+    top: 600px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.stars-section i:nth-child(9){
+    top: 100px;
+    right: 1000px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.stars-section i:nth-child(10){
+    top: 450px;
+    right: 450px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+.stars-section i:nth-child(11){
+    top: 800px;
+    right: 300px;
+    animation-delay: 0;
+    animation-duration: 1s;
+}
+.stars-section i:nth-child(12){
+    top: 200px;
+    right: 680px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+.stars-section i:nth-child(13){
+    top: 530px;
+    right: 560px;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+.stars-section i:nth-child(14){
+    top: 80px;
+    left: 380px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+.stars-section i:nth-child(15){
+    top: 60px;
+    left: 200px;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+.stars-section i:nth-child(16){
+    top: 460px;
+    right: 600px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+.stars-section i:nth-child(7){
+    top: 300px;
+    left: 10px;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+.stars-section i:nth-child(18){
+    top: 900px;
+    right: 700px;
+    left: initial;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
+}
+.stars-section i:nth-child(19){
+    top: 300px;
+    right: 400px;
+    left: initial;
+    animation-delay: 0.75s;
+    animation-duration: 2.25s;
+}
+.stars-section i:nth-child(20){
+    top: 450px;
+    right: 150px;
+    left: initial;
+    animation-delay: 2.75s;
+    animation-duration: 2.25s;
+}
+.moon2 {
+    animation: rotate 27s infinite linear;
+    position: absolute;
+    width: 1300px;
+    top: 300px;
+    left: -200px;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+.astro{
+    position: absolute;
+    top: 37.4%;
+    left: 44%;
+    width: 340px;
+    z-index: 4000;
+    animation: astrofloat 20s linear infinite;
+}
+@keyframes astrofloat {
+    0% {
+      transform: rotate(0deg) translateX(0px);
+    }
+    25% {
+      transform: rotate(10deg) translateX(0px);
+    }
+    50% {
+      transform: rotate(0deg) translateX(10px);
+    }
+    75% {
+      transform: rotate(-10deg) translateX(10px);
+    }
+    100% {
+      transform: rotate(0deg) translateX(10px);
+    }
+  }
+/*button */ 
+.explore{
+    position: relative;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    z-index: 6000;
+    width: 100px;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(174, 0, 255);
+    margin: 40px;
+    transition: 1s;
+    text-decoration: none;
+    overflow: hidden;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, transparent, rgba(128, 128, 128, 0.394));
+}
+.explore:hover{
+    background:  var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+    0 0 30px var(--clr),
+    0 0 60px var(--clr),
+    0 0 100px var(--clr);
+}
+.explore::before{
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 400%;
+    transition: 1s;
+    animation: exp 2s linear infinite;
+}
+.explore:hover::before{
+    width: 120%;
+}
+@keyframes exp{
+    0%{
+       transform: rotate(0deg);
+    } 
+    100% {
+            transform: rotate(360deg);
+        }
+}
+.explore::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background-image:  url(../../../public/images/moonanime.png);
+    transition: 0.5s;
+}
+.explore:hover::after{
+    background:  var(--clr);
+}
+.explore span{
+    position: relative;
+    z-index: 1;
+    font-size: 2em;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+.explore:hover span{
+    opacity: 1;
+}
+@media (max-width: 900px) {
+    .intro-container{
+        background-size: cover;
+    }
+    .explore{
+        left: 33%;
+    }
+    .astro{
+        left: 33%;
+    }
+    .moon2{
+        top: 50%;
+        left: 30%;
+    }
+}
+@media (max-width: 500px) {
+    .explore{
+        width: 60px;
+        height: 30px;
+        left: 15%;
+        font-size: 13px;
+    }
+    .astro{
+        left: 7%;
+        width: 300px;
+    }
+    .moon2{
+        top: 30%;
+        left: -40%;
+    }
+}

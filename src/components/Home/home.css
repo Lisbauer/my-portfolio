@@ -1,0 +1,294 @@
+.home-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 150px;
+    height: 627px;
+}
+.hi{
+    position: absolute;
+    top: 28%;
+    color: white;
+    letter-spacing: 16px;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: 'Geologica', sans-serif;
+}
+.secondary-text{
+    color: white;
+    position: absolute;
+    top: 45%;
+    font-size: 17px;
+    font-weight: 100;
+    font-family: 'Geologica', sans-serif;
+    letter-spacing: 17px;
+}
+.frontend-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+}
+.frontend-text{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 44%;
+}
+.front-span{
+    letter-spacing: 30px; 
+    margin-left: 20px;
+}
+.dev-span{
+    font-size: 80px;
+    letter-spacing: 10px;
+    line-height: 10px;
+}
+.welcome-portfolio{
+    color: white;
+}
+.giffy{
+    width: 300px;
+    height: 400px;
+}
+.giffy {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+  }
+  
+
+
+
+ /* PORTFOLIO*/ 
+ .container-welcome{
+    background-color: rgba(45, 2, 62, 0.979);
+    border-radius: 12px;
+    width: 500px;
+    height: 60px;   
+    padding-top: 15px;
+    letter-spacing: 2px;
+    position: absolute;
+    top: 70%;
+}
+.container-welcome span{
+    font-size: 25px;
+    font-weight: 800;
+    
+    color: rgba(255, 255, 255, 0);
+   
+}
+.container-welcome > span{
+    animation:  glow 2s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: hsl(311, 100%, 50%);
+        text-shadow: 0 0 12px rgb(179, 0, 255), 0 0 50px rgb(179, 0, 255), 0 0 100px rgb(179, 0, 255);
+    }
+    10%, 90%{
+        color: #ff05ff44;
+        text-shadow: none;
+    }
+}
+.container-welcome > span:nth-child(2){
+    animation-delay: 0.25s ;
+}
+.container-welcome > span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.container-welcome > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.container-welcome > span:nth-child(5){
+    animation-delay: 1s;
+}
+.container-welcome > span:nth-child(6){
+    animation-delay: 1.25s ;
+}
+.container-welcome > span:nth-child(7){
+    animation-delay: 1.5s;
+}
+.container-welcome > span:nth-child(8){
+    animation-delay: 1.75s;
+}
+.container-welcome > span:nth-child(9){
+    animation-delay: 2s ;
+}
+.container-welcome > span:nth-child(10){
+    animation-delay: 2.25s;
+}
+.container-welcome > span:nth-child(11){
+    animation-delay: 2.5s;
+}
+.container-welcome > span:nth-child(12){
+    animation-delay: 2.75s ;
+}
+.container-welcome > span:nth-child(13){
+    animation-delay: 3s;
+}
+.container-welcome > span:nth-child(14){
+    animation-delay: 3.25s;
+}
+.container-welcome > span:nth-child(15){
+    animation-delay: 3.5s ;
+}
+.container-welcome > span:nth-child(16){
+    animation-delay: 3.75s;
+}
+.container-welcome > span:nth-child(17){
+    animation-delay: 4s;
+}
+.container-welcome > span:nth-child(18){
+    animation-delay: 4.25s ;
+}
+.container-welcome > span:nth-child(19){
+    animation-delay: 4.5s;
+}
+.container-welcome > span:nth-child(20){
+    animation-delay: 4.75;
+} 
+
+
+/* H1 LISA BAUER */
+.h1-intro{
+    font-size: 110px;
+    color: rgba(169, 103, 255, 0);
+    -webkit-text-stroke: 1px rgba(255, 251, 255, 0.986);
+    -webkit-background-clip: text;
+    background-image:  url(../../../public/images/back2.png);
+    background-position: 0 0;
+    animation: back 30s linear infinite;   
+    position: absolute;
+    top: 22%;
+}
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+/* astro img */ 
+.astro2{
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left: 4%;
+    animation: astrofloat2 20s linear infinite;
+}
+@keyframes astrofloat2 {
+    0% {
+      transform: rotate(0deg) translateX(10px);
+    }
+    25% {
+      transform: rotate(10deg) translateX(10px);
+    }
+    50% {
+      transform: rotate(0deg) translateX(10px);
+    }
+    75% {
+      transform: rotate(-10deg) translateX(10px);
+    }
+    100% {
+      transform: rotate(0deg) translateX(10px);
+    }
+  }
+  @media (max-width: 1280px) {
+    .astro2 {
+      width: 330px;
+      top: 30%;
+      left: 3%;
+    }
+    .h1-intro{
+        top: 25%;
+        font-size: 100px;
+    }
+    .hi{
+        top: 30%;
+    }
+    .secondary-text{
+        top: 49%;
+    }
+    .frontend-text{
+        top: 48%;
+    }
+}
+  @media (max-width: 900px) {
+    .astro2 {
+      width: 300px;
+      top: 56%;
+      left: 33%;
+      z-index: 7;
+    }
+    .home-section{
+        height: 1000px;
+        margin-top: 0;
+    }
+    .h1-intro{
+        top: 10%;
+        font-size: 90px;
+    }
+    .hi{
+        top: 13%;
+    }
+    .secondary-text{
+        top: 27%;
+    }
+    .frontend-text{
+        position: absolute;
+        top: 27%;
+    }
+    .container-welcome{
+        position: absolute;
+        top: 47%;
+    }
+}
+@media (max-width: 500px) {
+    .astro2 {
+      width: 200px;
+      top: 55%;
+      left: 23%;
+    }
+    .home-section{
+        height: 800px;
+    }
+    .h1-intro{
+        top: 12%;
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .hi{
+        top: 13%;
+        font-size: 15px;
+    }
+    .secondary-text{
+        top: 23.5%;
+        font-size: 10px;
+    }
+    .front-span{
+        font-size: 20px;
+        letter-spacing: 17px;
+    }
+    .dev-span{
+        font-size: 30px;
+    }
+    .frontend-text{
+        line-height: 24px;
+        top: 20%;
+    }
+    .container-welcome{
+        top: 44%;
+        width: 300px;
+        height: 40px;
+        font-size: 10px;
+    }
+    .container-welcome span{
+        font-size: 15px;
+    }
+}

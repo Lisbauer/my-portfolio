@@ -1,0 +1,268 @@
+.bg{
+  background-attachment: fixed;
+    background-image: url(../../../public/images/nightnomoon.png);
+    animation: transitionIn 0.2s;
+    z-index: 10000;
+}  
+.li-container{
+    display: flex;
+    justify-content: center;
+    height: 140px;
+    background-color: rgba(35, 0, 52, 0.589);
+    font-family: 'Geologica', sans-serif;
+}
+.nav-links {
+    width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-links li{  
+    height: 48px;
+    text-align: center;
+    padding-top: 10px;
+    color: white; 
+    margin: 20px;
+    letter-spacing: 2px;
+    position: relative;
+}
+.nav-links li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(251, 255, 128);
+    transform: scaleX(0); 
+    transform-origin: right; 
+    transition: transform 0.2s ease-in-out;
+  }
+  .nav-links li:hover::before {
+    transform: scaleX(1); 
+    transform-origin: left; 
+  }
+
+li {
+    transition: 0.2s ease-in-out;
+    
+  }
+  
+  li:hover {
+    transform: scale(1.1);
+    color: rgb(251, 255, 128);
+  }
+.language-container{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  right: 8%;
+  top: 7%;  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.languageEn{
+  padding: 6px;
+  color: white;
+  font-weight: 100;
+  font-family: 'Geologica', sans-serif;
+  cursor: pointer;  
+}
+.languageEs{
+  padding: 6px;
+  color: white;
+  font-family: 'Geologica', sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+}
+.languageEn:hover{
+  background: rgba(181, 21, 255, 0.451);
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.languageEs:hover{
+  background: rgba(175, 2, 255, 0.469);
+  transition: 0.5s;
+  border-radius: 50%;
+}
+.languageEn.active {
+  color: violet;
+}
+.languageEs.active {
+  color: violet;
+}
+/* burger button */
+.burger-btn{
+  display: flex;
+  flex-direction: column;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  background: transparent;
+  display: none;
+}
+.burger-btn > * {
+  margin-bottom: 0.65rem;
+  }
+
+.burger-btn.active div {
+  background-color: rgba(252, 251, 251, 0.996); /* Color de fondo de los elementos div */
+}
+.burger-btn div{
+  background-color: rgb(254, 254, 254);
+  height: 2px;
+  width: 100%;
+  border-radius: 5px;
+  transition: all .5s;
+  transform-origin: left;
+}
+.burger-btn:hover div:first-child{
+  transform: rotate(45deg);
+}
+.burger-btn:hover div:nth-child(2){
+  opacity: 0;
+}
+.burger-btn:hover div:last-child{
+  transform: rotate(-45deg);
+}
+
+@media (max-width: 1300px) {
+  .nav-links{
+    font-size: 15px;
+  }
+  .language-container{
+    right: 8%;
+    top: 9%;
+  }
+}
+@media (max-width: 900px) {
+  .burger-btn{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: 0;
+    background: transparent;
+    z-index: 10;
+  }  
+  .li-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-image: url(../../../public/images/cloudstablet.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    z-index: 9; 
+    height: 1200px;
+    transition: 0.5s;
+  }
+  .li-container.active  {
+    transform: translateX(0);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+  .li-container.active::after  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 700px;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+  }
+  .nav-links li{
+    height: 70px;
+  }
+
+  .nav-links li::before {
+    display: none;
+  }
+  .burger-btn.active + .li-container .nav-links {
+    display: block;
+    transition: 0.5s;
+  }
+  .language-container{
+    right: 78%;
+    top: 3%;
+  }
+
+}
+@media (max-width: 500px) {
+  .burger-btn{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: 0;
+    background: transparent;
+    z-index: 10;
+  }  
+  .li-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    background-image: url(../../../public/images/cloudsmobile.png);
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-100%);
+    z-index: 9; 
+    height: 800px;
+    transition: 0.5s;
+  }
+  .li-container.active  {
+    transform: translateX(0);
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+  }
+  .li-container.active::after  {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 700px;
+  }
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    padding-bottom: 240px;
+  }
+  .nav-links li{
+    height: 30px;
+  }
+
+  .nav-links li::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    width: 10%;
+    left: 45%;
+    height: 1px;
+    transition: 0.5s;
+  }
+  .burger-btn.active + .li-container .nav-links {
+    display: block;
+    transition: 0.5s;
+  }
+}

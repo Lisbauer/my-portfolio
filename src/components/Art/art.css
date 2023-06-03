@@ -1,0 +1,332 @@
+.imagelist-container{
+  height: 100vh;
+  background-image: url(../../../public/images/askyfullofstars2.png);
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.art-text{
+  color: white;
+  font-size: 2em;
+  position: absolute;
+  top: 6%;
+  left: 41%;
+  z-index: 2;
+  letter-spacing: 20px;
+  font-weight: 100;
+}
+.imagelist2{
+  position: absolute;
+  top: 15%;
+  left: 38%;
+  z-index: 1;
+}
+.imagelist2::-webkit-scrollbar {
+  width: 20px;
+}
+.imagelist2::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+.imagelist2::-webkit-scrollbar-thumb {
+  background-color: pink;
+}
+.imagelist2::-webkit-scrollbar-thumb:hover {
+  background-color: hotpink;
+}
+.imagelist2 img {
+  transition: transform 0.3s ease;
+}
+.imagelist2 .MuiImageListItem-root {
+  overflow: visible;
+  position: relative;
+}
+.imagelist2 .MuiImageListItem-root:hover {
+  transform: scale(1.1);
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transform-origin: center;
+}
+  /* BUBBLES*/ 
+.bubbles{
+  display: flex;
+  z-index: 0;
+}
+.bubbles span{
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(252, 82, 252);
+  margin: 0 40px;
+  border-radius:  50%;
+  box-shadow: 0 0 10px rgb(243, 115, 238),
+  0 0 50px rgba(248, 154, 245, 0.94),
+  0 0 100px rgba(247, 155, 244, 0.999);
+  animation: animatelights 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+  animation-fill-mode: both;
+}
+.bubbles span:nth-child(even){
+  background-color: rgba(169, 63, 249, 0.993);
+  box-shadow: 0 0 10px rgba(169, 41, 254, 0.993),
+  50px 50px 50px rgba(200, 133, 251, 0.993),
+  0 0 100px rgba(202, 145, 245, 0.993);
+}
+@keyframes animatelights
+{
+    0%
+    {
+    transform: translateY(100vh) scale(0)
+    }
+    100%{
+        transform: translateY(0) scale(1);
+    }
+} 
+
+.box-art{
+  position: absolute;
+  top: 87%;
+  left: 27%;
+  z-index: 999; 
+}
+.box-art p{
+  font-size: 19px;
+  margin: 30px;
+  letter-spacing: 3px; 
+  font-family: 'Geologica', sans-serif;
+  font-weight: 100;
+}
+.box-art{
+  position: relative;
+  width: 900px;
+  height: 100px;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 50px;
+  transition: 0.5s;
+  font-family: 'Open Sans', sans-serif;
+}
+.box-art:hover{
+  transform: translateY(-10px);
+}
+.box-art::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;    
+  background: linear-gradient(315deg, rgb(255, 0, 128), rgb(157, 0, 255));
+}
+.box-art::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;    
+  background: linear-gradient(45deg, rgb(174, 0, 255), deeppink);
+  filter: blur(30px);
+}
+.box-art span{
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background-color: rgba(0, 0, 0, 0.563);
+  z-index: 2;
+}
+.box-art span::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  pointer-events: none;
+}
+.box-art  .content{
+  z-index: 10;
+  padding: 20px 40px;
+}
+.astro4{
+  position: absolute;
+  top: 63%;
+  left: 25%;
+  width: 300px;
+  z-index: 999;
+}
+.bubbletalk{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 13%;
+  top: 49%;
+}
+.details-p{
+  position: absolute;
+  width: 200px;
+  top: 52%;
+  left: 15%;
+  font-size: 20px;
+  z-index: 999;
+  letter-spacing: 1px;  
+  font-family: 'Geologica', sans-serif;
+  font-weight: 100;
+}
+@media (max-width: 1400px) {
+  .imagelist-container{
+    height: 1000px;
+  }
+  .art-text{
+    left: 33%;
+    top: -5%;
+  }
+  .imagelist2{
+    left: 29%; 
+    top: 7%;
+  }
+  .box-art{
+    left: 12%;
+    top: 80%;
+  }
+  .astro4{
+    left: 10%;
+    top: 57%;
+  }
+  .bubbletalk{
+    left: 1%;
+    width: 230px;
+    height: 180px;
+    top: 50%;
+  }
+  .details-p{
+    left: 1.6%;
+    top: 52%;
+    width: 200px;
+  }
+}
+@media (max-width: 1100px) {
+  .imagelist-container{
+    height: 1200px;
+  }
+  .art-text{
+    font-size: 30px;
+    left: 24%;
+  }
+  .imagelist2{
+    width: 300px;
+    left: 16%; 
+    height: 1500px;
+  }
+  .MuiImageListItem-root{
+   height: 250px;
+  }
+  .imagelist2 img {
+    width: 200px;
+    height: 200px;
+  }
+  .box-art{
+    top: 95%;
+    left: 2%;
+    width: 700px; 
+  }
+  .box-art p{
+    top: 90%;
+    left: -5%;
+    font-size: 16px;
+  }
+  .astro4{
+    top: 76%;
+    left: 32%;
+  }
+  .bubbletalk{
+    top: 73%;
+    width: 200px;
+    height: 160px;
+    left: 18%;
+  }
+  .details-p{
+    top: 75%;
+    width: 120px;
+    height: 130px;
+    left: 22%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .imagelist-container{
+    height: 1100px;
+  }
+  .art-text{
+    align-items: center;
+  }
+  .imagelist2{
+    left: 12%; 
+  }
+  .box-art{
+    top: 90%;
+    left: -2%;
+  }
+  .astro4{
+    top: 69%;
+  }
+  .bubbletalk{
+    top: 68%;
+  }
+  .details-p{
+    top: 70%;
+  }
+}
+@media (max-width: 500px) {
+  .imagelist-container{
+    height: 1200px;
+  }
+  .art-text{
+    font-size: 20px;
+    left: 14%;
+  }
+  .imagelist2{
+    height: 1300px;
+  }
+  .MuiImageListItem-root{
+   height: 250px;
+  }
+  .imagelist2 img {
+    width: 200px;
+    height: 200px;
+  }
+  .box-art{
+    top: 83%;
+    left: -5%;
+    width: 300px;   font-size: 10px;
+  }
+  .box-art p{
+    top: 90%;
+    left: -5%;
+    width: 280px;   font-size: 12px;
+  }
+  .astro4{
+    top: 67%;
+    width: 260px;
+    left: 24%;
+  }
+  .bubbletalk{
+    top: 64%;
+    width: 150px;
+    height: 130px;
+    left: 8%;
+  }
+  .details-p{
+    top: 66%;
+    width: 120px;
+    height: 130px;
+    left: 11%;
+    font-size: 11px;
+  }
+}
