@@ -16,7 +16,6 @@
   transition: all 2.5s;
 }
 .rockett img{
-  transform: scale(0.8, -0.);
   z-index: 10000;
 }
 .rockett::before{
