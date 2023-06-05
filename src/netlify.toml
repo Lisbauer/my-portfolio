@@ -1,0 +1,4 @@
+[[redirects]]
+    from = "/intro"
+    to = "Intro.jsx"
+    status = 200
