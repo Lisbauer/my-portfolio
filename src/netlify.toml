@@ -1,4 +1,4 @@
 [[redirects]]
-    from = "/intro"
-    to = "Intro.jsx"
+    from = "/*"
+    to = "index.html"
     status = 200
