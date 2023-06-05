@@ -5,22 +5,26 @@
   position: relative;
   justify-content: center;
   align-items: center;
+  margin-top: 150px;
 }
 .art-text{
   color: white;
   font-size: 2em;
   position: absolute;
-  top: 6%;
-  left: 41%;
+  top: -10%;
+
   z-index: 2;
   letter-spacing: 20px;
   font-weight: 100;
 }
 .imagelist2{
-  position: absolute;
-  top: 15%;
-  left: 38%;
+  max-width: 80%;
   z-index: 1;
+}
+.container-draw-box{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .imagelist2::-webkit-scrollbar {
   width: 20px;
@@ -51,6 +55,7 @@
 .bubbles{
   display: flex;
   z-index: 0;
+  max-width: 100%;
 }
 .bubbles span{
   position: relative;
@@ -82,11 +87,23 @@
         transform: translateY(0) scale(1);
     }
 } 
-
+.exp-box{
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .box-art{
-  position: absolute;
-  top: 87%;
-  left: 27%;
+  position: relative;
+  max-width: 60%;
+  height: 100px;
+  color: #fff;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  font-family: 'Open Sans', sans-serif; 
   z-index: 999; 
 }
 .box-art p{
@@ -95,19 +112,6 @@
   letter-spacing: 3px; 
   font-family: 'Geologica', sans-serif;
   font-weight: 100;
-}
-.box-art{
-  position: relative;
-  width: 900px;
-  height: 100px;
-  color: #fff;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 50px;
-  transition: 0.5s;
-  font-family: 'Open Sans', sans-serif;
 }
 .box-art:hover{
   transform: translateY(-10px);
@@ -156,8 +160,8 @@
 }
 .astro4{
   position: absolute;
-  top: 63%;
-  left: 25%;
+  top: 49%;
+  left: 22%;
   width: 300px;
   z-index: 999;
 }
@@ -165,39 +169,35 @@
   position: absolute;
   width: 300px;
   height: 200px;
-  left: 13%;
-  top: 49%;
+  left: 11%;
+  top: 40%;
+  z-index: 1000;
 }
 .details-p{
   position: absolute;
   width: 200px;
-  top: 52%;
-  left: 15%;
+  top: 44%;
+  left: 13%;
   font-size: 20px;
   z-index: 999;
   letter-spacing: 1px;  
   font-family: 'Geologica', sans-serif;
   font-weight: 100;
+  z-index: 1001;
 }
 @media (max-width: 1400px) {
   .imagelist-container{
-    height: 1000px;
-  }
-  .art-text{
-    left: 33%;
-    top: -5%;
-  }
-  .imagelist2{
-    left: 29%; 
-    top: 7%;
-  }
-  .box-art{
-    left: 12%;
-    top: 80%;
+    height: auto;
   }
   .astro4{
     left: 10%;
     top: 57%;
+  }
+  .box-art{
+    max-width: 70%;
+  }
+  .box-art p{
+    font-size: 15px;
   }
   .bubbletalk{
     left: 1%;
@@ -207,21 +207,20 @@
   }
   .details-p{
     left: 1.6%;
-    top: 52%;
-    width: 200px;
+    top: 54%;
   }
 }
 @media (max-width: 1100px) {
   .imagelist-container{
-    height: 1200px;
+    height: auto;
+    background-image: url(../../../public/images/askyfullofstars2mobile2.png);
   }
   .art-text{
     font-size: 30px;
-    left: 24%;
   }
   .imagelist2{
     width: 300px;
-    left: 16%; 
+    left: 16%;
     height: 1500px;
   }
   .MuiImageListItem-root{
@@ -231,28 +230,19 @@
     width: 200px;
     height: 200px;
   }
-  .box-art{
-    top: 95%;
-    left: 2%;
-    width: 700px; 
-  }
-  .box-art p{
-    top: 90%;
-    left: -5%;
-    font-size: 16px;
-  }
+
   .astro4{
-    top: 76%;
+    top: 100%;
     left: 32%;
   }
   .bubbletalk{
-    top: 73%;
+    top: 98%;
     width: 200px;
     height: 160px;
     left: 18%;
-  }
+  }  
   .details-p{
-    top: 75%;
+    top: 101%;
     width: 120px;
     height: 130px;
     left: 22%;
@@ -261,7 +251,7 @@
 }
 @media (max-width: 768px) {
   .imagelist-container{
-    height: 1100px;
+    height: auto;
   }
   .art-text{
     align-items: center;
@@ -270,63 +260,49 @@
     left: 12%; 
   }
   .box-art{
-    top: 90%;
-    left: -2%;
+    max-width: 100%;
+  }
+  .box-art p{
+    width: 300px;
   }
   .astro4{
-    top: 69%;
+    top: 99%;
   }
   .bubbletalk{
-    top: 68%;
+    top: 98%;
   }
   .details-p{
-    top: 70%;
+    top: 101%;
+    left: 24%;
+    font-size: 15px;
   }
 }
 @media (max-width: 500px) {
-  .imagelist-container{
-    height: 1200px;
-  }
   .art-text{
     font-size: 20px;
-    left: 14%;
-  }
-  .imagelist2{
-    height: 1300px;
-  }
-  .MuiImageListItem-root{
-   height: 250px;
-  }
-  .imagelist2 img {
-    width: 200px;
-    height: 200px;
   }
   .box-art{
     top: 83%;
-    left: -5%;
-    width: 300px;   font-size: 10px;
   }
   .box-art p{
-    top: 90%;
-    left: -5%;
-    width: 280px;   font-size: 12px;
+    width: 240px;
+    font-size: 12px;
   }
   .astro4{
-    top: 67%;
-    width: 260px;
-    left: 24%;
+    top: 98%;
+    width: 220px;
   }
   .bubbletalk{
-    top: 64%;
-    width: 150px;
-    height: 130px;
+    top: 98%;
+    width: 130px;
+    height: 120px;
     left: 8%;
   }
   .details-p{
-    top: 66%;
-    width: 120px;
+    top: 100%;
+    width: 70px;
     height: 130px;
-    left: 11%;
+    left: 16%;
     font-size: 11px;
   }
 }

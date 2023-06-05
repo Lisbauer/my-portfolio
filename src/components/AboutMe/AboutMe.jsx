@@ -32,7 +32,7 @@ const AboutMe = () => {
             href=""
             style={{ "--clr": "#ff22bb", "--i": 0 }}
           >
-            <a href={getCVFile()} download>
+            <a style={{textDecoration: "none"}} href={getCVFile()} download>
         <span>CV</span>
       </a>
           </a>
@@ -61,7 +61,7 @@ const AboutMe = () => {
             <span></span>
             <div className="content">
               <h2 className="gettoknowme">{isEnglish ? "GET TO KNOW ME A LITTLE MORE!" : "CONOCEME UN POCO MÁS!"}</h2>
-              <p>{isEnglish ? "In my free time, I love playing videogames. I've been a gamer since I was 15, so I'm very familiar with technology. I have two cats who love to lean on my keyboard and erase my code. I'm passionate about digital art, I've always wanted a graphics tablet. My favorite place in the world is my workspace, as I consider it incredibly useful and supportive in nurturing inspiration." : "En mi tiempo libre, me encanta jugar videojuegos. Soy jugadora desde los 15 años, así que estoy muy familiarizada con la tecnología. Tengo dos gatos que les encanta apoyarse en mi teclado y borrar mi código. Siento pasión por el arte digital, siempre he querido tener una tableta gráfica. Mi lugar favorito en el mundo es mi espacio de trabajo, ya que lo considero extremadamente útil y un apoyo para nutrir la inspiración."}
+              <p>{isEnglish ? "In my free time, I love playing videogames. I've been a gamer since I was 15, so I'm very familiar with PC technology. I have two cats who love to lean on my keyboard and erase my code. I'm passionate about digital art, I've always wanted a graphics tablet. My favorite place in the world is my workspace, as I consider it incredibly useful and supportive in nurturing inspiration." : "En mi tiempo libre, me encanta jugar videojuegos, aficionada desde los 15 años. Tengo dos gatos que les encanta apoyarse en mi teclado y borrar mi código. Siento pasión por el arte digital, siempre he querido tener una tableta gráfica. Mi lugar favorito en el mundo es mi espacio de trabajo, ya que lo considero extremadamente útil y un apoyo para nutrir la inspiración."}
               </p>
             </div>
           </div>

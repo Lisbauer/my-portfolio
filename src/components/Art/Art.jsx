@@ -20,20 +20,10 @@ export default function QuiltedImageList() {
   const { isEnglish, toggleLanguage } = useContext(LanguageContext);
   return (
     <div className='imagelist-container'>
+      <div className="container-draw-box">
         <h2 className='art-text'>{isEnglish ? "MY ART GALLERY" : "GALERÍA DE ARTE"}</h2>
     <ImageList className='imagelist2'
-     sx={{ width: 600, height: 650, overflowX:"hidden",
-      "@media (max-width: 500px)": {
-        width: "300px",
-        height: "650px",
-      },
-    "@media (max-width: 395px)": {
-        left: "11%",
-      },  
-      "@media (max-width: 365px)": {
-        left: "9%",
-      },
-    }}
+     sx={{ width: 600, height: 650, overflowX:"hidden",}}
       variant="quilted"
       cols={4}
       rowHeight={121}
@@ -48,14 +38,14 @@ export default function QuiltedImageList() {
         </ImageListItem>
       ))}
     </ImageList>      
-
+<div className="exp-box">
     <div className="box-art">
             <span></span>
             <div className="content">
               <p>{isEnglish ? "I have experience using software such as Photoshop, Paint tool SAI, Adobe After Effects, Sony Vegas and Cinema 4D." : "Tengo experiencia utilizando programas como Photoshop, Paint Tool SAI, Adobe After Effects, Sony Vegas y Cinema 4D."}
               </p>
             </div>
-          </div>
+          </div></div></div>
           <p className='details-p'>{isEnglish ? "Beauty lies in the smallest of details." : "La belleza está en los pequeños detalles."}</p>
           <img className="bubbletalk"
           src="../../images/bubletalk.png"

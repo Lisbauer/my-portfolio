@@ -293,20 +293,18 @@ ul .red-li:hover a .icon-span{
         height: 130vh;
     }
     .container-max .bg-span{
-        width: calc(10vw - 4px);
-        height: calc(10vw - 4px);
+        width: calc(10vw - 2px);
+        height: calc(10vw - 2px);
     }
 }
-@media (max-width: 900px) {
-    .container-max .bg-span{
-        width: calc(10vw - 3px);
-        height: calc(10vw - 3px);
+
+@media (max-width: 650px) {
+    .container-max{
+        height: 100vh;
     }
-}
-@media (max-width: 500px) {
     .container-max .bg-span{
-        width: calc(13vw - 4px);
-        height: calc(13vw - 4px);
+        width: calc(20vw - 2px);
+        height: calc(20vw - 2px);
     }
     .container-max .contact-container .content-contact{
         position: relative;

@@ -3,6 +3,7 @@
     background-image: url(../../../public/images/nightnomoon.png);
     animation: transitionIn 0.2s;
     z-index: 10000;
+    overflow: hidden;
 }  
 .li-container{
     display: flex;
@@ -159,7 +160,7 @@ li {
     align-items: center;
     transform: translateY(-100%);
     z-index: 9; 
-    height: 1200px;
+    height: 1000px;
     transition: 0.5s;
   }
   .li-container.active  {
@@ -183,6 +184,7 @@ li {
     display: flex;
     flex-direction: column;
     font-size: 30px;
+    max-width: 90%;
   }
   .nav-links li{
     height: 70px;
@@ -222,7 +224,7 @@ li {
     align-items: center;
     transform: translateY(-100%);
     z-index: 9; 
-    height: 800px;
+    height: 900px;
     transition: 0.5s;
   }
   .li-container.active  {
@@ -246,12 +248,11 @@ li {
     display: flex;
     flex-direction: column;
     font-size: 17px;
-    padding-bottom: 240px;
+    padding-bottom: 240px;   
   }
   .nav-links li{
     height: 30px;
   }
-
   .nav-links li::before {
     content: "";
     position: absolute;

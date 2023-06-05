@@ -45,8 +45,12 @@ const Home = () => {
           <h1 className="h1-intro"> LISA BAUER </h1>
           <h3 className="secondary-text">{isEnglish ? "AND I'M A" : "Y SOY UNA"}</h3>
           <h2 className="frontend-text">
-            {" "}
-            <span className="front-span">{isEnglish ? "FRONTEND" : "DESARROLLADORA"}</span> <br />{" "}
+          {" "}
+        <span className={`front-span ${isEnglish ? "" : "h2-desarrolladora"}`}>
+          {isEnglish ? "FRONTEND" : "DESARROLLADORA"}
+        </span>{" "}
+            
+            
             <span className="dev-span">{isEnglish ? "DEVELOPER" : "FRONTEND"}</span>
           </h2>
 

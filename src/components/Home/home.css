@@ -17,7 +17,7 @@
 .secondary-text{
     color: white;
     position: absolute;
-    top: 45%;
+    top: 46%;
     font-size: 17px;
     font-weight: 100;
     font-family: 'Geologica', sans-serif;
@@ -27,13 +27,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 90px;
 }
 .frontend-text{
     color: white;
     font-size: 50px;
     position: absolute;
-    top: 44%;
+    line-height: 110px;
+    display: flex;
+    flex-direction: column;
+    top: 45%;
 }
 .front-span{
     letter-spacing: 30px; 
@@ -47,26 +49,6 @@
 .welcome-portfolio{
     color: white;
 }
-.giffy{
-    width: 300px;
-    height: 400px;
-}
-.giffy {
-    animation: floating 3s ease-in-out infinite;
-  }
-  
-  @keyframes floating {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(15px);
-    }
-  }
-  
-
-
-
  /* PORTFOLIO*/ 
  .container-welcome{
     background-color: rgba(45, 2, 62, 0.979);
@@ -199,31 +181,12 @@
       transform: rotate(0deg) translateX(10px);
     }
   }
-  @media (max-width: 1280px) {
-    .astro2 {
-      width: 330px;
-      top: 30%;
-      left: 3%;
-    }
-    .h1-intro{
-        top: 25%;
-        font-size: 100px;
-    }
-    .hi{
-        top: 30%;
-    }
-    .secondary-text{
-        top: 49%;
-    }
-    .frontend-text{
-        top: 48%;
-    }
-}
+
   @media (max-width: 900px) {
     .astro2 {
       width: 300px;
-      top: 56%;
-      left: 33%;
+      top: 67%;
+      left: 31%;
       z-index: 7;
     }
     .home-section{
@@ -238,31 +201,39 @@
         top: 13%;
     }
     .secondary-text{
-        top: 27%;
+        top: 30%;
     }
     .frontend-text{
         position: absolute;
         top: 27%;
+    }   
+    .h2-desarrolladora{
+        font-size: 45px;
+        font-weight: 100;
+        letter-spacing: 6px;
     }
     .container-welcome{
         position: absolute;
-        top: 47%;
+        top: 53%;
     }
 }
-@media (max-width: 500px) {
+@media (max-width: 550px) {
+     .home-section{
+        height: 100vh;
+        max-width: 100%;
+    } 
     .astro2 {
       width: 200px;
       top: 55%;
-      left: 23%;
+      left: 27%;
     }
-    .home-section{
-        height: 800px;
-    }
+  
     .h1-intro{
         top: 12%;
         font-size: 40px;
         line-height: 55px;
     }
+ 
     .hi{
         top: 13%;
         font-size: 15px;
@@ -279,8 +250,13 @@
         font-size: 30px;
     }
     .frontend-text{
-        line-height: 24px;
-        top: 20%;
+        line-height: 90px;
+        top: 22%;
+    }   
+    .h2-desarrolladora{
+        font-size: 25px;
+        font-weight: 100;
+        letter-spacing: 6px;
     }
     .container-welcome{
         top: 44%;

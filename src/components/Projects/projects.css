@@ -1,40 +1,21 @@
-.projectmain{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/*.projectmain{
     height: 100vh;
     background-image: url(../../../public/images/cloud2.png); 
-    flex-direction: column;
-    position: relative; 
+    background-size: cover;
+    position: relative;     
 }
-.project-text{
-    color: rgb(255, 255, 255);
-    font-size: 3.5em;
-    letter-spacing: 16px;
-    position: absolute; 
-    top: 5%; 
-    right: 6%; 
-    transform: translate(-50%, -50%);
-    font-family: 'Geologica', sans-serif;
-}
- /* PORTFOLIO SIGN*/ 
- .myproject{
-    position: absolute;
-    top: 7%; 
-    right: 6%; 
-    transform: translate(-50%, -50%);
-    border-radius: 12px;
-    width: 500px;
-    height: 90px;   
-    padding-top: 15px;
-    letter-spacing: 2px;
-    font-family: 'Geologica', sans-serif;
+
+.project-main{    
+    display: flex;
+   flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .myproject span{
     font-size: 55px;
-    font-weight: 800;
-    color: rgba(255, 255, 255, 0);
-
+    font-weight: 100;
+    color: rgba(240, 15, 184, 0);
+    font-family: 'Geologica', sans-serif;
 }
 .myproject > span{
     animation:  glowh2 2s ease-in-out infinite;
@@ -78,12 +59,13 @@
 
 .project-container{
     position: relative;
+    flex-direction: row;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     gap: 100px 50px;
-    padding: 100px 50px;    
+    padding-bottom: 150px;    
     font-family: 'Geologica', sans-serif;
 }
 .project-container .project-card{
@@ -161,102 +143,245 @@
     box-shadow: inset 10px 0 0 45px rgba(0, 0, 0, 0.376);
   }
 
-  @media (max-width: 1720px) {
-    .project-text{
-        position: absolute; 
-        top: -20%; 
-        right: 6%; 
-    }
-     .myproject{
-        top: -19%; 
-    }
-  }
-  @media (max-width: 1400px) {
-    .projectmain{
-        height: 1600px;
-    }
-    .myproject{
-        top: -10%;
-        left: 34%;
-    }
-    .project-text{
-        top: -10%;
-        left: 13%;
-    }
-}
-  @media (max-width: 1100px) {
+
+@media (max-width: 1670px) {    
     .projectmain{
         height: 1900px;
     }
-    .myproject{
-        top: 0%;
-        left: 20%;
-    }
-    .project-text{
-        top: -1%;
-        left: 13%;
-    }
-    .project-card{
-        height: 800px;
+    .project-container{
+        flex-direction: column; 
     }
 }
 @media (max-width: 860px) {
     .projectmain{
-        height: 2200px;
+        margin-top: 120px;
+        height: auto; 
     }
-    .myproject{
-        top: 10%;
-        left: 20%;
+    .project-container .project-card{
+        justify-content: center;        
+        align-items: center;
+        max-width: 90%;
     }
-    .project-text{
-        top: 9%;
-        left: 13%;
-    }
-    .project-card{
-        height: 800px;
+    .project-container .project-card .project-imgBx {
+        max-width: 75%;
     }
 }
-@media (max-width: 768px) {
-    .projectmain{
-        height: 2300px;
+@media (max-width: 800px) {
+    .project-container {
+      gap: 50px;
+      padding-bottom: 100px;
     }
-    .myproject{
-        top: 13%;
-        left: 17%;
+    .project-container .project-card{
+        justify-content: center;        
+        align-items: center;
+        max-width: 80%; 
+        height: 400px;
     }
-    .project-text{
-        top: 12%;
-        left: 8%;
-        font-size: 40px;
+    .project-container .project-card {
+      width: 400px;
+      height: 400px;
     }
-    .project-card{
-        height: 800px;
+    .project-container .project-card .project-imgBx {
+      right: 43px;
+      max-width: 75%;
+      height: 200px;
+    }
+  }
+
+@media (max-width: 600px) {
+    .myproject span{
+        font-size: 32px;
+    }  
+    .project-container .project-card{
+       max-width: 70%;
+       height: 360px;
+       align-items: center;
+    }
+    .project-container .project-card .project-imgBx {
+        max-width: 65%;
     }
 }
 @media (max-width: 500px) {
-    .projectmain{
-        height: 2000px;
+    .project-card {
+        width: 200px;
+     }
+
+} 
+*/ 
+.box-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../../../public/images/cloud2.png); 
+    background-size: cover;
+    flex-direction: column;
+    position: relative;
+}
+.myproject {
+    position: absolute;
+    top: 10%;
+    z-index: 100;
+  }
+.myproject span{
+    font-size: 55px;
+    font-weight: 100;
+    color: rgba(240, 15, 184, 0);
+    font-family: 'Geologica', sans-serif;
+}
+
+.myproject > span{
+    animation:  glowh2 2s ease-in-out infinite;
+}
+@keyframes glowh2{
+    0%, 100%{
+        color: hsl(311, 100%, 98%);
+        text-shadow: 0 0 12px rgb(179, 0, 255), 0 0 50px rgb(179, 0, 255), 0 0 100px rgb(179, 0, 255);
     }
-    .myproject{
-        top: 4%;
-        left: 1%;
+    10%, 90%{
+        color: #ff05ff44;
+    }
+}
+.myproject > span:nth-child(2){
+    animation-delay: 0.25s ;
+}
+.myproject > span:nth-child(3){
+    animation-delay: 0.5s;
+}
+.myproject > span:nth-child(4){
+    animation-delay: 0.75s;
+}
+.myproject > span:nth-child(5){
+    animation-delay: 1s;
+}
+.myproject > span:nth-child(6){
+    animation-delay: 1.25s ;
+}
+.myproject > span:nth-child(7){
+    animation-delay: 1.5s;
+}
+.myproject > span:nth-child(8){
+    animation-delay: 1.75s;
+}
+.myproject > span:nth-child(9){
+    animation-delay: 2s ;
+}
+.myproject > span:nth-child(10){
+    animation-delay: 2.25s;
+}
+.project-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+}
+.project-container .card{
+    position: relative;
+    width: 450px;
+    height: 350px;
+    background: #ffffff1f;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.205);
+    transition: 0.5s;
+
+}
+.project-container .card:hover{
+    height: 400px;
+}
+.project-container .card .imgBx{
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 400px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+    align-items: center;
+}
+.project-container .card:hover .imgBx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.377);
+}
+.project-container .card .imgBx img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-container .card .content{
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 55px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+.project-container .card:hover .content{
+    top: 130px;
+    height: 250px;
+}
+.project-container .card .content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: var(--clr);
+}
+.project-container .card .content p{
+    color: #fdfdfd;
+}
+.project-container .card .content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: var(--clr);
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 8px;
+}
+@media (max-width: 1500px) {
+    .box-body{
+        height: auto;
+        margin-bottom: 300px;
+        margin-top: 300px;
+    }
+    .myproject {
+        top: -20%;
+      }
+}
+@media (max-width: 930px) {
+    .box-body{
+        background-image: url(../../../public/images/cloudstablet.png); 
+    } 
+    .myproject {
+        top: -10%;
+      } 
+}
+@media (max-width: 650px) {
+    .project-container .card{
+        width: 350px;
+        height: 250px;
+    }
+    .project-container .card .imgBx{
+        position: absolute;
+        top: 20px;
+        width: 300px;
+        height: 170px;
+    }
+    .project-container .card .content{
+        position: absolute;
+        top: 180px;
+        width: 100%;
     }
     .myproject span{
-        font-size: 32px;
+        font-size: 30px;
     }
-    .project-text{
-        top: 5%;
-        left: 13%;
-        font-size: 25px;
-    }
-    .project-container .project-card .project-imgBx {
-        position: absolute;
-        left: 5%;
-        width: 270px;
-    }
-    .project-container .project-card{
-       width: 300px;
-       height: 420px;
-    }
-
 }
