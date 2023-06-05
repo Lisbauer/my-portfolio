@@ -8,7 +8,6 @@ export const LanguageProvider = ({ children }) => {
   const toggleLanguage = () => {
     setEnglish(!isEnglish);
   };
-
   return (
     <LanguageContext.Provider value={{ isEnglish, toggleLanguage }}>
       {children}
