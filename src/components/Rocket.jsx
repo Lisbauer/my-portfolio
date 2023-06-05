@@ -12,7 +12,7 @@ const Rocket = () => {
   };
 
   return (
-    <div className="rocket-box">
+    <div className="rocket-box">            <img src="/images/rocket.png" alt="rocket" />
       <Link to="navbar" smooth={true} duration={1500} spy={true} exact="true">
         <div
           className={`rocket-container ${rocketActive ? "active" : ""}`}
