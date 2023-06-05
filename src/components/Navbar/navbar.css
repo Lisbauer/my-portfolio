@@ -2,7 +2,7 @@
   background-attachment: fixed;
     background-image: url(../../../public/images/nightnomoon.png);
     animation: transitionIn 0.2s;
-    z-index: 10000;
+    z-index: 5000;
     overflow: hidden;
 }  
 .li-container{

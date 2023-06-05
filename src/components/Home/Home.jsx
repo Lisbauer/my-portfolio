@@ -40,7 +40,7 @@ const Home = () => {
       </section>
       <section className="home-section">
         <div className="frontend-box">
-          <img className="astro2" src="../images/astro3.png" alt="" />
+         <a href="./intro"> <img className="astro2" src="../images/astro3.png" alt="" /></a>
           <h3 className="hi">{isEnglish ? "HI, I'M" : "HOLA, SOY"}</h3>
           <h1 className="h1-intro"> LISA BAUER </h1>
           <h3 className="secondary-text">{isEnglish ? "AND I'M A" : "Y SOY UNA"}</h3>
