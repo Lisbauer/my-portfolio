@@ -63,9 +63,9 @@ const Skills = () => {
         <div
           data-aos="fade-right"
           className="skills-box"
-          style={{ "--clr": "#ffed00", "--i": 0 }}
+          style={{ "--clr": "#ffed00", "--i": 0, alignItems: "center" }}
         >
-          <FontAwesomeIcon className="icon" icon={faBootstrap} />
+          <img className="icon" style={{width:"50px", height:"50px"}}  src="/images/mui.png" alt="mui icon" />
           <span>MUI</span>
         </div>
         <div
@@ -91,9 +91,9 @@ const Skills = () => {
         <div
           data-aos="fade-left"
           className="skills-box"
-          style={{ "--clr": "#0060ff", "--i": 0 }}
+          style={{ "--clr": "#0060ff", "--i": 0, alignItems: "center"}}
         >
-          <FontAwesomeIcon className="icon" icon={faJs} />
+          <img className="icon" style={{width:"45px", height:"45px"}}  src="/images/ps.png" alt="photoshop icon" />
           <span>PHOTOSHOP</span>
         </div>
         <div
@@ -107,17 +107,17 @@ const Skills = () => {
         <div
           data-aos="fade-up"
           className="skills-box"
-          style={{ "--clr": "#ff0000", "--i": 0 }}
+          style={{ "--clr": "#ff0000", "--i": 0, alignItems: "center" }}
         >
-          <FontAwesomeIcon className="icon" icon={faJs} />
+          <img className="icon" style={{width:"50px", height:"50px"}}  src="/images/postman.png" alt="postman" />
           <span>POSTMAN</span>
         </div>
         <div
           data-aos="fade-up"
           className="skills-box"
-          style={{ "--clr": "#f5ffa6", "--i": 0 }}
+          style={{ "--clr": "#f5ffa6", "--i": 0, alignItems: "center"  }}
         >
-          <FontAwesomeIcon className="icon" icon={faJs} />
+          <img className="icon" style={{width:"90px", height:"50px"}}  src="/images/mysql.png" alt="mysql" />
           <span>MYSQL</span>
         </div>
         <div
