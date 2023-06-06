@@ -35,7 +35,7 @@ const Projects = () => {
         <div className='content'>
             <h2>AWG</h2>
             <p>{isEnglish ? "My first landing page, my first freelance job, and my first time working together with a UX/UI designer" : "Mi primer página landing, mi primer trabajo freelance, y mi primera vez trabajando junto a una diseñadora UX/UI.  "}</p>
-            <a href="">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+            <a href="https://github.com/Lisbauer/AWG-Project-Landing" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
         </div>
       </div>
 
