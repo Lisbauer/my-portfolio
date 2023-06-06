@@ -319,6 +319,11 @@ ul .red-li:hover a .icon-span{
     .error-p{
         left: 2%;
     }
+    .modal{
+        width: 350px;
+        right: -40%;
+    }
+
     .input-box{
         width: 50px;
     }
@@ -370,5 +375,9 @@ ul .red-li:hover a .icon-span{
 @media (max-width: 360px) {
     .container-max{
         height: 110vh;
+    }
+    .modal{
+        width: 300px;
+        right: -30%;
     }
 }
