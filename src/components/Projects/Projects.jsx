@@ -79,7 +79,7 @@ const Projects = () => {
         <div className='content'>
             <h2>HOLA VET</h2>
             <p>{isEnglish ? "A payment gateway for a veterinary that offers social work for animals." : "Una pasarela de pago para una veterinaria que ofrece planes de obras sociales para animales.  "}</p>
-            <a href="https://awg-seven.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+            <a href="https://payment-gateway-for-hola-vet.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
         </div>
       </div>
       </div>
