@@ -35,7 +35,7 @@ const Projects = () => {
         <div className='content'>
             <h2>AWG</h2>
             <p>{isEnglish ? "My first landing page, my first freelance job, and my first time working together with a UX/UI designer" : "Mi primer página landing, mi primer trabajo freelance, y mi primera vez trabajando junto a una diseñadora UX/UI.  "}</p>
-            <a href="https://github.com/Lisbauer/AWG-Project-Landing" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+            <a href="https://awg-seven.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
         </div>
       </div>
 
@@ -65,6 +65,21 @@ const Projects = () => {
               <p>{isEnglish ? "An eCommerce for the brand M.A, still in progress." : "Una tienda online para la marca de ropa M.A, en progreso"}
               </p>
               <a href="">{isEnglish ? "IN PROGRESS" : "EN PROGRESO"}</a>
+        </div>
+      </div>
+
+      <div className='card' style={{ "--clr": "#89FFA0" }}>
+        <div className='imgBx'> 
+            <img
+                className="project-img"
+                src="../../images/project-3.png"
+                alt="picture"
+              />
+        </div>
+        <div className='content'>
+            <h2>HOLA VET</h2>
+            <p>{isEnglish ? "A payment gateway for a veterinary that offers social work for animals." : "Una pasarela de pago para una veterinaria que ofrece planes de obras sociales para animales.  "}</p>
+            <a href="https://awg-seven.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
         </div>
       </div>
       </div>

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 110vh;
     background-image: url(../../../public/images/cloud2.png); 
     background-size: cover;
     flex-direction: column;
@@ -10,7 +10,7 @@
 }
 .myproject {
     position: absolute;
-    top: 10%;
+    top: 0%;
     z-index: 100;
   }
 .myproject span{
