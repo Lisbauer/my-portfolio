@@ -189,7 +189,6 @@ li {
   .nav-links li{
     height: 70px;
   }
-
   .nav-links li::before {
     display: none;
   }

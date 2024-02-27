@@ -24,7 +24,7 @@ const Projects = () => {
 </div>
 
       <div className='project-container'>
-      <div className='card' style={{ "--clr": "#66e3ff" }}>
+      <div className='card' style={{ "--clr": "#030ffc" }}>
         <div className='imgBx'> 
             <img
                 className="project-img"
@@ -82,6 +82,37 @@ const Projects = () => {
             <a href="https://payment-gateway-for-hola-vet.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
         </div>
       </div>
+
+      <div className='card' style={{ "--clr": "#fc7303" }}>
+        <div className='imgBx'> 
+            <img
+                className="project-img"
+                src="../../images/magnadimenseon.png"
+                alt="picture"
+              />
+        </div>
+        <div className='content'>
+            <h2>MAGNA DIMENSEON</h2>
+            <p>{isEnglish ? "A landing page created for a startup, managing it's design, code, and producing the illustrations." : "Un sitio web, formato landing page, hecho para una startup, gestione su diseño, código, y realice las ilustraciones."}</p>
+            <a href="https://magnadimenseon.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+        </div>
+      </div>
+
+      <div className='card' style={{ "--clr": "#66e3ff " }}>
+        <div className='imgBx'> 
+            <img
+                className="project-img"
+                src="../../images/iqbroker.png"
+                alt="picture"
+              />
+        </div>
+        <div className='content'>
+            <h2>IQ BROKER</h2>
+            <p>{isEnglish ? "I converted a WordPress website to React, fixing errors, adhering to the color palette, and adding a contact form. I managed the overall design." : "Convertí su página web de WordPress a React, corrigiendo errores, respetando la paleta de colores, y añadiendo un formulario de contacto, gestioné el diseño general."}</p>
+            <a href="https://iqbroker.vercel.app/" target="blank">{isEnglish ? "CHECK OUT" : "EXPLORAR"}</a>
+        </div>
+      </div>
+
       </div>
     </div>
   )
