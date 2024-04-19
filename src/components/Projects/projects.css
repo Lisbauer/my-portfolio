@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    height: 160vh;
     background-image: url(../../../public/images/cloud2.png); 
     background-size: cover;
     flex-direction: column;
@@ -144,7 +144,7 @@
         margin-top: 300px;
     }
     .myproject {
-        top: -20%;
+        top: -10%;
       }
 }
 @media (max-width: 930px) {
@@ -152,7 +152,7 @@
         background-image: url(../../../public/images/cloudstablet.png); 
     } 
     .myproject {
-        top: -10%;
+        top: -3%;
       } 
 }
 @media (max-width: 650px) {
