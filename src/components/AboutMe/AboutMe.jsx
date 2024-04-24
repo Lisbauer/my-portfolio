@@ -52,7 +52,7 @@ const AboutMe = () => {
             <span></span>
             <div className="content">
               <h2>{isEnglish ? "WHAT ARE MY GOALS?" : "CUÁLES SON MIS METAS?"}</h2>
-              <p>{isEnglish ? "I aspire to become proficient in the latest technologies and frameworks, constantly staying updated with industry trends. Ultimately, my goal is to secure challenging projects or employment opportunities that allow me to utilize my programmingand design skills effectively, contributing to innovative anduser-friendly digital experiences. Currently, I am taking a UX/UI design course at Coder house." : "Mi objetivo es destacarme en tecnología y diseño, busco proyectos desafiantes u oportunidades laborales donde pueda aplicar de manera efectiva mis habilidades en programación y diseño, contribuyendo a la creación de experiencias digitales innovadoras y amigables para los usuarios.  Actualmente, estoy realizando un curso de diseño UX/UI en Coderhouse."}
+              <p>{isEnglish ? "I aspire to become proficient in the latest technologies and frameworks, constantly staying updated with industry trends. Ultimately, my goal is to secure challenging projects or employment opportunities that allow me to utilize my programmingand design skills effectively, contributing to innovative anduser-friendly digital experiences." : "Mi objetivo es destacarme en tecnología y diseño, busco proyectos desafiantes u oportunidades laborales donde pueda aplicar de manera efectiva mis habilidades en programación y diseño, contribuyendo a la creación de experiencias digitales innovadoras y amigables para los usuarios."}
               </p>
             </div>
           </div>
