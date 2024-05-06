@@ -23,7 +23,9 @@ const Skills = () => {
           data-aos="fade-up"
           data-aos-anchor-placement="center-bottom"
         >
-          {isEnglish ? "TECHNOLOGIES I AM FAMILIAR WITH" : "TECNOLOGÍAS CON LAS QUE ESTOY FAMILIARIZADA"}
+          {isEnglish
+            ? "TECHNOLOGIES I AM FAMILIAR WITH"
+            : "TECNOLOGÍAS CON LAS QUE ESTOY FAMILIARIZADA"}
         </h2>
       </div>
 
@@ -65,7 +67,12 @@ const Skills = () => {
           className="skills-box"
           style={{ "--clr": "#ffed00", "--i": 0, alignItems: "center" }}
         >
-          <img className="icon" style={{width:"50px", height:"50px"}}  src="/images/mui.png" alt="mui icon" />
+          <img
+            className="icon"
+            style={{ width: "50px", height: "50px" }}
+            src="/images/mui.png"
+            alt="mui icon"
+          />
           <span>MUI</span>
         </div>
         <div
@@ -91,9 +98,14 @@ const Skills = () => {
         <div
           data-aos="fade-left"
           className="skills-box"
-          style={{ "--clr": "#0060ff", "--i": 0, alignItems: "center"}}
+          style={{ "--clr": "#0060ff", "--i": 0, alignItems: "center" }}
         >
-          <img className="icon" style={{width:"45px", height:"45px"}}  src="/images/ps.png" alt="photoshop icon" />
+          <img
+            className="icon"
+            style={{ width: "45px", height: "45px" }}
+            src="/images/ps.png"
+            alt="photoshop icon"
+          />
           <span>PHOTOSHOP</span>
         </div>
         <div
@@ -109,16 +121,35 @@ const Skills = () => {
           className="skills-box"
           style={{ "--clr": "#ff0000", "--i": 0, alignItems: "center" }}
         >
-          <img className="icon" style={{width:"50px", height:"50px"}}  src="/images/postman.png" alt="postman" />
-          <span>POSTMAN</span>
+          <img
+            className="icon"
+            style={{ width: "50px", height: "50px" }}
+            src="/images/nextjs.png"
+            alt="postman"
+          />
+          <span>NEXT.JS</span>
         </div>
         <div
           data-aos="fade-up"
           className="skills-box"
-          style={{ "--clr": "#f5ffa6", "--i": 0, alignItems: "center"  }}
+          style={{ "--clr": "#f5ffa6", "--i": 0, alignItems: "center" }}
         >
-          <img className="icon" style={{width:"90px", height:"50px"}}  src="/images/mysql.png" alt="mysql" />
-          <span>MYSQL</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-tailwind"
+            width="56"
+            height="56"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#ffffff"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M11.667 6c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 2 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968zm-4 6.5c-2.49 0 -4.044 1.222 -4.667 3.667c.933 -1.223 2.023 -1.68 3.267 -1.375c.71 .174 1.217 .68 1.778 1.24c.916 .912 1.975 1.968 4.288 1.968c2.49 0 4.044 -1.222 4.667 -3.667c-.933 1.223 -2.023 1.68 -3.267 1.375c-.71 -.174 -1.217 -.68 -1.778 -1.24c-.916 -.912 -1.975 -1.968 -4.288 -1.968z" />
+          </svg>
+          <span>TAILWINDCSS</span>
         </div>
         <div
           data-aos="fade-up-left"
