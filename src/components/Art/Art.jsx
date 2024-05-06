@@ -129,4 +129,41 @@ const itemData = [
     rows: 1,
     cols: 2,
   },
+
+  {
+    img: "../../images/Banner_Lateral.jpg",
+    title: 'Razer Banner Lateral',
+    rows: 3,
+    cols: 1,
+  },
+  {
+    img: "../../images/Landing_Page.jpg",
+    title: 'Razer Landing Page',
+    rows: 3,
+    cols: 1,
+  }, 
+  {
+    img: "../../images/Banner_Estandar.jpg",
+    title: 'Razer Banner Standard',
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: "../../images/Banner_Ig.jpg",
+    title: 'Razer Banner IG',
+    rows: 1,
+    cols: 2,
+  },
+  {
+    img: "../../images/fushimi.png",
+    title: 'Fushimi paper style',
+    rows: 1,
+    cols: 2,
+  },
+  {
+    img: "../../images/catonpiano.png",
+    title: 'Cat on paino',
+    rows: 1,
+    cols: 2,
+  },
 ];
